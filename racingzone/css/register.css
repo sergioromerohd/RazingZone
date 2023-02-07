@@ -1,0 +1,50 @@
+.card{
+	width: 75% !important;
+}
+.fondo{	
+	background:  black !important;
+}
+body {
+  margin: 0;
+}
+.sect {
+  width: 100%;
+}
+#sect1{
+  background-color: #3333337d;
+}
+
+#sect1 {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh !important;
+}
+video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 120%;
+}
+
+
+@media (max-width: 650px) { 
+	.hide{
+		display: none !important;
+	}
+	.card{
+	width: 100% !important;
+	}
+	video {
+		width: auto;
+		height: 130% !important;
+	}
+	#sect1 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+}

@@ -1,0 +1,37 @@
+DDL USUARIOS
+
+CREATE TABLE usuarios(
+    id int unsigned unique not null auto_increment,
+    usuario varchar(25) not null,
+    password varchar(100) not null,
+    entrada date not null default current_timestamp,
+    foto varchar(100) default "./img/usuarios/default.png",
+    rango varchar(25) not null default "recluta",
+    primary key(id)
+)engine=InnoDB;
+
+DDL POSTS
+
+CREATE TABLE posts(
+    cod_post int unsigned UNIQUE not null AUTO_INCREMENT,
+    titulo varchar(100) not null,
+    cuerpo varchar(1500) not null,
+    fecha date  DEFAULT CURRENT_TIMESTAMP,
+    likes int default 0 not null,
+    id int unsigned not null,
+    PRIMARY KEY(cod_post),
+    FOREIGN KEY(id) REFERENCES usuarios(id) on DELETE CASCADE on UPDATE CASCADE
+)ENGINE=INNODB;
+
+
+DDL fotos
+
+create table fotos
+
+CREATE TABLE fotos( 
+    cod_foto int UNSIGNED UNIQUE NOT NULL,
+    FOTO VARCHAR(50) NOT NULL,
+    cod_post int unsigned not null, 
+    PRIMARY KEY(cod_foto), 
+    FOREIGN key(cod_post) REFERENCES posts(cod_post) on DELETE CASCADE on UPDATE CASCADE 
+)ENGINE=INNODB

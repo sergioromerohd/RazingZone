@@ -1,0 +1,11 @@
+.baner{
+	min-height: 150px;
+	background-color: rgb(224, 221, 170,0.4) !important;
+}
+.nombreautor{
+	text-shadow: 0 0 10px rgb(130, 130, 100);
+	color: black;
+}
+.formulario{
+	display: none !important;
+}

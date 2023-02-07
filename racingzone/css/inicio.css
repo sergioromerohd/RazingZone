@@ -1,0 +1,80 @@
+
+.imgfondo{
+	background: linear-gradient(to bottom, rgb(20, 30, 39,0.95) 0%, rgb(20, 30, 39,0.45) 100%), url('../img/fondo.jpg');
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-attachment: fixed;
+	background-size: auto 130%;
+}
+.imgfondobajo{
+	background: linear-gradient(to bottom, rgb(20, 30, 39,0.7) 0%, rgb(20, 30, 39,0.25) 100%),url('../img/fondo2.jpg');
+	background-repeat:no-repeat;
+	background-position-x:center;
+	background-attachment: fixed;
+	background-size: auto 130%;
+}
+.titfoto{
+	font-family: Bahnschrift;
+}
+.fondoslide{
+	background-color: rgb(224, 221, 170,0.95) !important;
+}
+.fondoslidebajo{
+	background-color: rgb(20, 30, 39,0.95) !important;
+}
+.border-text-white {
+  -webkit-text-stroke: 1px white;
+  color: black; 
+}	
+.nav-item{
+	font-size: x-large 	!important;
+}
+li>button{
+	font-size: x-large !important;
+}
+.fixcar{
+	width: 75% !important;
+}
+.carousel-caption{
+	top: 35%; !important;
+	bottom: unset;
+  align-items: stretch;
+}
+.bn-oscuro{
+	filter: grayscale(0.7)opacity(0.5);
+}
+a.bn img {
+	filter: grayscale(0.95) opacity(0.9);
+}
+ 
+a.bn:hover img {
+	filter: grayscale(0)opacity(1);
+}
+@media (max-width: 750px) { 
+	.imgfondo{
+		background-size: auto 100%;
+	}
+	.imgfondobajo{
+		background-size: auto 100%;
+	}
+	.canva{
+		padding-right: calc(var(--bs-gutter-x) * .1);
+    padding-left: calc(var(--bs-gutter-x) * .1);
+	}
+	.fixcar{
+	width: 100% !important;
+	}
+	.hide{
+		display: none !important;
+	}
+	.fondoslide{
+		padding-left: 3% !important;
+		padding-right: 3% !important;
+	}
+	}
+}
+@media (max-width: 650px) { 
+	.hide-movil{
+		display: none !important;
+	}
+}

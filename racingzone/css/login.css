@@ -1,0 +1,105 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+}
+.sect{
+    width: 100%;
+    margin: 0;
+}
+#sect1 {
+  position: relative;
+  overflow: hidden;
+  min-height: 85vh;
+}
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: ;
+  height: 120%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 0px;
+}
+
+@media screen and (max-height: 600px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 650px) {
+    .login-form{
+        margin-top: 45%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+    #sect1{
+        min-height: 80vh;
+    }
+    .login-main-text{
+    margin-top: 0 !important;
+    padding: 10px;
+    color: #fff;
+}
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%;
+        width: 60%;
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+
+    .login-form{
+        margin-top: 30%;
+        width: 60%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}

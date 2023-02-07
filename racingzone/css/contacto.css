@@ -1,0 +1,19 @@
+.mapa{
+	height: 75vh !important;
+	opacity: 0.8;
+}
+.card-W{
+	width: 80% !important;
+}
+
+@media (max-width: 750px) { 
+	.mapa{
+		display: none;
+	}
+	.card{
+		margin-top: 0.5rem;
+	}
+	.card-W{
+	width: 100% !important;
+	}
+}

@@ -1,0 +1,40 @@
+	1-taller de reparacion de coches de alta gama
+
+ideas
+
+usar un include para el header y footer 
+colores:	
+
+ASPECTOS NECESARIIS
+
+	Tema:taller de coches
+	contenido gratuito: informacion sobre nuestros servicios logros etc
+	contenido de pago: tutoriales de modificaciones basicas ofrecidas por el taller
+	Servicios: Repareciones, Modificaciones, pintura. 
+	
+INICIO
+	
+	https://es.wix.com/website-template/view/html/1732?siteId=31d4e8a0-d7b2-441d-a2b4-afb7e5068afe&metaSiteId=28586071-7d5d-42e4-905c-78d4051a77d5&originUrl=https%3A%2F%2Fes.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fbusiness%2Fautomotive-cars&tpClick=view_button
+	navbar_fixedtop
+		inicio proyectos vip perfil
+	imagen del foro con una imagen y logo en vh-100 la imagen fixed al fondo 
+	servicios 
+	logros con un modal 
+	footer(redes sociales con botones de logo y los derechos reservados de la pagina)
+
+COMPRA DEL RANGO VIP
+
+	pricing de boostrap, con opciones mensual anual y lifetime.
+	ventajas: grupo de watshap, rutas y tutoriales personales con asistencia 24/7
+
+PROYECTOS EN PROFUNDIDAD
+	Foro de coches donde cada usuario regustrado pueda publicar un post con sus coches, o proyectos. dentro de este foro aparecera el post del usuario con la informacion del usuario, nombre fecha y foto.
+	" tendra la posibilidad de dar like a cada post y mostrara los los likes que tiene cada post "
+
+	https://es.motor1.com/news/562250/toyota-gr-yaris-giacuzzo-tuning/
+
+
+CONTACTANOS
+
+(logIn)(Register)
+	basico, sin cifrado que te identifique por nombre y un pin de 4 numeros.

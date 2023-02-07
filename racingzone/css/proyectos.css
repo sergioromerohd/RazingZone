@@ -1,0 +1,51 @@
+.proye-tit{
+	background: linear-gradient(to bottom, rgb(20, 30, 39,0.95) 0%, rgb(20, 30, 39,0.75) 100%);
+}
+.vh-35{
+	height: 35vh;
+}
+.w-sm-75{
+	max-width: 100%;
+    height: auto;
+}
+.nav-item{
+	text-decoration: none !important;
+}
+.td-none{
+	text-decoration: none;
+	font-size: large;
+}
+.post{
+	width: 88% !important;
+}
+.partepost{
+	position: relative;
+}
+.likesbar{
+	position:absolute;
+    bottom:2%;
+    right:8%;
+}
+.autor{
+	width: 100vh;
+}
+.redactar{
+	display: block !important;
+    margin: auto 0 !important;
+}
+@media (max-width: 720px) {
+	.post{
+	width: 96% !important;
+}
+}
+@media (min-height: 1200px) { 
+	.vh-35{
+		height: 23vh !important;
+}
+	
+}
+@media (min-height: 750px) { 
+	.vh-35{
+		height: 29vh !important;
+}
+}

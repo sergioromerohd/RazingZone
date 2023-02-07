@@ -1,0 +1,146 @@
+<div class="row m-0 p-0 mt-1 pt-1 mb-2 justify-content-center align-items-center ">
+                <div class="col-3">
+                    <a href="./">
+                        <img alt="Logo de la marca" class="img-fluid navlogo" src="./img/navlogo.jpg"/>
+                    </a>
+                </div>
+                <div class="col-9">
+                    <ul class="nav justify-content-end ">
+                        <li class="nav-item dropdown nav-item-hover">
+                            <a aria-expanded="false" class="nav-link text-dark" href="./proyectos.php">
+                                Foro
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown nav-item-hover">
+                            <a  class="nav-link text-dark"  href="./compravip.php">
+                                VIP
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown nav-item-hover">
+                            <a aria-expanded="false" class="nav-link text-dark" data-bs-toggle="dropdown" href="#" role="button">
+                                Tutoriales
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Action
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Another action
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Something else here
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider"/>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        Separated link
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  border-end border-2 nav-item-hover">
+                            <a aria-expanded="false" class="nav-link text-dark"  href="./contactanos.php" role="button">
+                                Contactanos
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item-hover">
+                            <?php 
+                            if (isset($_SESSION['usuario'])) {
+                                echo '<a aria-current="page" class="nav-link text-dark " href="./usuario.php?usuario='.$_SESSION["usuario"].'">';
+                                echo $_SESSION["usuario"];
+                                echo "</a>";
+                                
+                            }else {
+                                echo '<a aria-current="page" class="nav-link text-dark " href="./login.php">
+                                Iniciar sesion
+                                </a>';
+                            }
+                            
+                            ?>
+                        </li>
+                        <li class="nav-item dropdown menu">
+                            <button class="btn menu nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#navmenu" aria-controls="offcanvasWithBackdrop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="navmenu" aria-labelledby="offcanvasWithBackdropLabel">
+                                <div class="offcanvas-header pt-2">
+                                    <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel"><a href="./">
+                                        <img alt="Logo de la marca" class="img-fluid navlogo" src="./img/navlogo.jpg"/>
+                                    </a></h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="dropdown">
+                                      <a class="border-0 bg-white  text-dark nav-link" href="./proyectos.php" id="dropdownMenuButton1" aria-expanded="false">
+                                        Proyectos
+                                      </a>
+                                    </div>
+                                    <div class="dropdown">
+                                      <button class=" dropdown-toggle border-0 bg-white fs-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Vip
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="./compravip.php">Compra vip</a></li>
+                                        <li><a class="dropdown-item" href="#">Proyecto2</a></li>
+                                        <li><a class="dropdown-item" href="#">Proyecto3</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                      <button class=" dropdown-toggle border-0 bg-white fs-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Tutoriales
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">tutorial1</a></li>
+                                        <li><a class="dropdown-item" href="#">Proyecto2</a></li>
+                                        <li><a class="dropdown-item" href="#">Proyecto3</a></li>
+                                      </ul>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="./contactanos.php" class="text-dark">
+                                      <button class=" border-0 bg-white fs-1" aria-expanded="false">
+                                        Contactanos
+                                      </button>
+                                      </a>
+                                    </div>
+                                    <hr class="dropdown-divider"/>
+                                    <a href="./<?php if (isset($_SESSION['usuario'])) {echo "./usuario.php?usuario=".$_SESSION['usuario'] ;}else {echo "login.php";}?>" class="nav-link text-dark">
+                                    <?php if (isset($_SESSION['usuario'])) {echo $_SESSION['usuario'];}else {echo "Iniciar Sesion";}?>
+                                    </a>
+                                    <a href="./<?php if (isset($_SESSION['usuario'])) {echo "logout.php";}else {echo "register.php";}?>" class="nav-link text-dark">
+                                        <?php if (isset($_SESSION['usuario'])) {echo "Cerrar Sesion";}else {echo "Registrate";}?>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item m-0 p-0 my-auto">
+                            <a href="./<?php 
+                                    if (isset($_SESSION['usuario'])) {
+                                    echo "logout.php";
+                                    
+                                }else {
+                                    echo "register.php";
+                                }
+                                 ?>" class="btn-login">
+                            <button class="btn bg-dark text-white" type="button ">
+                                
+                                    <svg class="bi bi-person" fill="currentColor" height="12" viewbox="0 0 16 16" width="12" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z">
+                                        </path>
+                                    </svg><?php if (isset($_SESSION['usuario'])) {echo "Cerrar Sesion";}else {echo "Registrate";}?>
+                               
+                            </button>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>

@@ -1,0 +1,8 @@
+Paso a tablas razingzone
+
+
+usuarios(_ID_,usuario,password,entrada,foto, rango,)
+
+posts(_cod_post_,titulo,cuerpo,fecha,likes,"cod_usuario")
+
+fotos(_cod_foto_,foto)
