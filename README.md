@@ -7,7 +7,9 @@ Para poder probarlo localmente tendras que tener habilitado un servidor local (X
 
 2-  Importar el SQl que encontraras en el repositorio
 
-3-  Abrir en tu explorador el localhost en el puerto que estes emitiendo
+3-  Cambiar en la raiz de la pagina en Database.php y poner la informacion de tu host (Username, contraseña....)
+
+4-  Abrir en tu explorador el localhost en el puerto que estes emitiendo
 
 
 ---------------------------------------------------------------------------------------------------
